@@ -1,0 +1,18 @@
+html,
+body,
+#root {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	background: radial-gradient(
+		93.88% 123.54% at 50% 123.54%,
+		#172554 0%,
+		#020c2c 100%
+	);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}

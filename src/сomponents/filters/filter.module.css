@@ -1,0 +1,117 @@
+.textFilterContainer,
+.dropdownContainer {
+	display: flex;
+	gap: 1rem;
+}
+@media (max-width: 720px) {
+	.textFilterContainer {
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+.inputGroup,
+.dropdownGroup {
+	display: flex;
+	flex-direction: column;
+}
+
+.label {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	text-transform: capitalize;
+}
+
+.input {
+	padding: 7px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.dropdown {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.filterButton {
+	padding: 0.4rem 0.8rem;
+	border: 1px solid #007bff;
+	border-radius: 4px;
+	background: white;
+	cursor: pointer;
+	font-size: 0.9rem;
+}
+
+.filterButton:hover {
+	background-color: #f0f8ff;
+}
+
+.dropdownFilterWrapper {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	align-self: flex-end;
+}
+
+.dropdownBlock {
+	position: relative;
+}
+
+.dropdownToggle {
+	padding: 0.5rem 1rem;
+	background-color: #f0f0f0;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+}
+@media (max-width: 720px) {
+	.dropdownFilterWrapper {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.dropdownBlock {
+		width: 100%;
+	}
+	.dropdownToggle {
+		width: 100%;
+	}
+}
+.dropdownToggle:hover {
+	background-color: #e0e0e0;
+}
+
+.dropdownMenu {
+	position: absolute;
+	top: 110%;
+	left: 0;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	z-index: 10;
+	width: max-content;
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.dropdownItem {
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	white-space: nowrap;
+	color: black;
+}
+
+.dropdownItem:hover {
+	background-color: #f5f5f5;
+}
+
+.active {
+	background-color: #007bff;
+	color: white;
+}

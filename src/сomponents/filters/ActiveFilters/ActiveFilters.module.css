@@ -1,0 +1,36 @@
+.activeFilters {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 1.5rem;
+}
+.title {
+	font-size: 14px;
+	margin: 0;
+	color: #bfdbfe;
+}
+.filtersList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.filterTag {
+	background-color: #e0e7ff;
+	color: #1e3a8a;
+	padding: 4px 8px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+}
+
+.removeButton {
+	background: none;
+	border: none;
+	color: #1e3a8a;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 6px;
+}
